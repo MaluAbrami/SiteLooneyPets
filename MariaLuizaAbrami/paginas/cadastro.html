@@ -1,0 +1,109 @@
+<!DOCTYpE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+        <script src="../js/cadastro.js"></script>
+        <title>Login</title>
+    </head>
+    <body>
+        <section class="container">
+            <section class="form">
+                <form action=""> <!--Formulário com 5 tipos de entradas diferentes, sendo elas: text, email, tel, number e radio. Alternativa D-->
+                    <section class="formHeader">
+                        <h1>Cadastre-se</h1>
+                        <button><a href="../layout.html">Voltar</a></button>
+                    </section>
+                    <section class="inputGroup">
+                        <section class="inputBox">
+                            <label for="primeiroNome">Primeiro Nome</label>
+                            <input type="text" name="primeiroNome" id="primeiroNome" placeholder="Digite o seu primeiro nome" required>
+                        </section>
+                        <section class="inputBox">
+                            <label for="ultimoNome">Sobrenome</label>
+                            <input type="text" name="ultimoNome" id="ultimoNome" placeholder="Digite o seu sobrenome" required>
+                        </section>
+                        <section class="inputBox">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                        </section>
+                        <section class="inputBox">
+                            <label for="celular">Celular</label>
+                            <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx" required>
+                        </section>
+                        <section class="inputBox">
+                            <label for="animal">(#)Numero do animal</label>
+                            <input type="number" name="animal" id="animal" placeholder="Digite #numero do animal" required>
+                        </section>
+                        <section class="inputBox">
+                            <label for="especie">Espécie</label>
+                            <input type="text" name="especie" id="especie" placeholder="Digite a espécie do animal" required>
+                        </section>
+                    </section>
+                    <section class="genderGroup">
+                        <section class="genderTitle">
+                            <h4>Seu Gênero</h4>
+                        </section>
+                        <section class="genderInput">
+                            <label for="feminino">Feminino</label>
+                            <input type="radio" name="genero" id="feminino" value="Feminino">
+                        </section>
+                        <section class="genderInput">
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="genero" id="masculino" value="Masculino">
+                        </section>
+                        <section class="genderInput">
+                            <label for="outro">Outro</label>
+                            <input type="radio" name="genero" id="outro" value="Outro">
+                        </section>
+                    </section>
+                    <section class="inputMensagem inputBox">
+                        <label for="mensagem">Motivações</label>
+                        <input type="text" name="mensagem" id="mensagem" placeholder="Escreva aqui quais são as suas motivações para adotar um animal" required>
+                    </section>
+                    <section class="botaoContinuar">
+                        <button type="reset">Limpar</button>
+                        <button type="button" onclick="Enviar()">Enviar</button>
+                    </section>
+                </form>
+            </section>
+            <section class="form">
+                <h3>Dados Cadastrados</h3>
+                <br>
+                <br>
+                <form class="formCadastrado"> <!--Impressão dos dados que foram enviados pelo formulário. Alternativa E-->>
+                    <label for="primeiroNomeCad">Primeiro Nome:</label>
+                    <span id="primeiroNomeCad"></span>
+                    <br>
+                    <br>
+                    <label for="ultimoNomeCad">> Sobrenome:</label>
+                    <span id="ultimoNomeCad"></span>
+                    <br>
+                    <br>
+                    <label for="emailCad">> E-mail:</label>
+                    <span id="emailCad"></span>
+                    <br>
+                    <br>
+                    <label for="celularCad">> Celular:</label>
+                    <span id="celularCad"></span>
+                    <br>
+                    <br>
+                    <label for="animalCad">> (#)Numero do animal:</label>
+                    <span id="animalCad"></span>
+                    <br>
+                    <br>
+                    <label for="especieCad">> Espécie:</label>
+                    <span id="especieCad"></span>
+                    <br>
+                    <br>
+                    <label for="generoCad">> Gênero:</label>
+                    <span id="generoCad"></span>
+                    <br>
+                    <br>
+                    <label for="mensagemCad">> Motivações:</label>
+                    <span id="mensagemCad"></span>
+                </form>
+            </section>
+        </section>
+    </body>
+</html>

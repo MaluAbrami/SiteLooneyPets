@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*CSS do cabeçalho da página*/
+
+header {
+    background-color: #6c63ff;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+body {
+    background-color: #0c0ce94d;
+}
+
+/*CSS do menu da página*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem; /*Serve para deixar nosso nav responsivo*/
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navItem {
+    margin: 0 15px;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.navLink:hover {
+    color: #0c0ce94d;
+}
+
+.dropDown ul {
+    width: 9rem;
+    background-color: #6c63ff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.dropDownMenu {
+    position: absolute;
+    display: none;
+    width: 6.5rem;
+    align-items: center;
+    background-color: transparent;
+}
+
+.dropDownMenu a {
+    display: block;
+    color: #fff;
+    margin: 5px;
+}
+
+.dropDown:hover .dropDownMenu{
+    display: block; /*FAZ O MENU DROPDOWN FICAR UM LINK EMBAIXO DO OUTRO*/
+    justify-content: space-between;
+}
+
+.dropDownMenu a:hover {
+    color: #0c0ce94d;
+    border-radius: 5px;
+}
+
+#menu,
+.dropDownMenu {
+    margin-left: 10rem;
+    margin-right: 2rem;
+}
+
+/*CSS da página inicial*/
+
+main {
+    margin-bottom: 1rem;
+}
+
+#paginaIncial {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#paginaIncial h1 {
+    color: #242424;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#paginaIncial h2 {
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.adoçãoIncentivo {
+    width: 100%;
+    background-color: #6c63ff;
+    box-shadow: 0px 3px 10px #242424;
+}
+
+.adoçãoIncentivo p {
+    color: #fff;
+    margin: 1.5rem 6rem;
+    padding: 2rem;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.motivosGrupo {
+    display: flex; /*Usei para deixar os textos de incentivos um ao lado do outro*/
+    margin-top: 1.5rem;
+}
+
+.textoMotivos {
+    margin: 1rem;
+    padding: 0.75rem;
+    border-radius: 10px;
+    background-color: #6c63ff;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0px 3px 10px #242424;
+}
+
+.textoMotivos h4 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    color: #242424;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+#botaoCadastro {
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0px 3px 10px #fff;
+}
+
+#botaoCadastro a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#botaoCadastro:hover {
+    background-color: #6b63fff1;
+    cursor: pointer;
+}
+
+#botaoSobre {
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0px 3px 10px #fff;
+}
+
+#botaoSobre a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#botaoSobre:hover {
+    background-color: #6b63fff1;
+    cursor: pointer;
+}
+
+.youtube {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.youtube h4 {
+    margin: 1rem;
+    color: #242424;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.fonte {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fonte:hover {
+    color: #6c63ff;
+}
+
+.conteudoRelacionado {
+    background-color: #6c63ff;
+}
+
+.conteudoRelacionado video {
+    margin: 1rem;
+}
+
+.artigoPatrocinador {
+    padding: 2rem;
+    color: #fff;
+    box-shadow: 0px 3px 10px #242424;
+}
+
+.artigoPatrocinador ol {
+    margin: 2rem;
+}
+
+.artigoPatrocinador a {
+    text-decoration: none;
+    color: blue;
+}
+
+.artigoPatrocinador a:hover {
+    color: #fff;
+}
+
+.titlePatrocinador {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/*CSS do footer*/
+
+.contato {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.contato img {
+    width: 3.5rem;
+}
+
+.fontes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.fontes a {
+    text-decoration: none;
+    color: blue;
+}
+
+.fontes a:hover {
+    color: #0c0ce94d;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
